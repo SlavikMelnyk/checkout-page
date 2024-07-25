@@ -1,0 +1,323 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: $background-color;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  padding: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: none;
+  color: $text-color;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-back {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .back {
+    font-size: 15px;
+  }
+}
+
+.curent-balance {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: $balance-color;
+  padding: 10px;
+  margin: 0 -20px;
+  gap: 10px;
+  .balance-dolar {
+    font-weight: bold;
+  }
+}
+
+.card-item {
+  background: $icon-fone;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+
+  .card-item-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .all-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-card-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .card-info {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .card-info-modal {
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .card-item-description {
+    display: flex;
+    color: $text-color;
+    margin: 0;
+    .description-for-card {
+      font-size: 10px;
+    }
+  }
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+
+  .input-deposit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .amont-description {
+      font-size: 12px;
+      color: $text-color;
+      opacity: 50%;
+    }
+
+    .input {
+      background: $icon-fone;
+      padding: 5px;
+      justify-content: center;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 7px;
+    }
+
+    .plus-input {
+      display: flex;
+      justify-content: space-between;
+
+      .plus-many {
+        background: $icon-fone;
+        padding: 10px 20px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    height: 500px;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .modal-close,
+  .modal-back {
+    top: 15px;
+    font-size: 1.2rem;
+  }
+
+  .modal-back .back {
+    font-size: 12px;
+  }
+
+  .curent-balance {
+    padding: 8px;
+    gap: 8px;
+    font-size: 14px;
+
+    .balance-dolar {
+      font-size: 14px;
+    }
+  }
+
+  .card-item {
+    padding: 10px;
+    gap: 8px;
+
+    .card-item-info {
+      gap: 8px;
+    }
+
+    .all-card-info {
+      gap: 8px;
+    }
+
+    .main-card-info {
+      gap: 3px;
+
+      .card-info {
+        font-size: 12px;
+      }
+
+      .card-info-modal {
+        font-size: 8px;
+      }
+    }
+
+    .card-item-description {
+      .description-for-card {
+        font-size: 8px;
+      }
+    }
+  }
+
+  .amount {
+    gap: 8px;
+
+    .input-deposit {
+      gap: 8px;
+
+      .amont-description {
+        font-size: 10px;
+      }
+
+      .input {
+        padding: 8px 16px;
+      }
+
+      .plus-input {
+        justify-content: space-around;
+
+        .plus-many {
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 90%;
+    height: 450px;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .modal-close,
+  .modal-back {
+    top: 10px;
+    font-size: 1rem;
+  }
+
+  .modal-back .back {
+    font-size: 10px;
+  }
+
+  .curent-balance {
+    padding: 5px;
+    gap: 5px;
+    font-size: 12px;
+
+    .balance-dolar {
+      font-size: 12px;
+    }
+  }
+
+  .card-item {
+    padding: 8px;
+    gap: 5px;
+
+    .card-item-info {
+      gap: 5px;
+    }
+
+    .all-card-info {
+      gap: 5px;
+    }
+
+    .main-card-info {
+      gap: 2px;
+
+      .card-info {
+        font-size: 10px;
+      }
+
+      .card-info-modal {
+        font-size: 7px;
+      }
+    }
+
+    .card-item-description {
+      .description-for-card {
+        font-size: 7px;
+      }
+    }
+  }
+
+  .amount {
+    gap: 5px;
+
+    .input-deposit {
+      gap: 5px;
+
+      .amont-description {
+        font-size: 8px;
+      }
+
+      .input {
+        padding: 5px 10px;
+      }
+
+      .plus-input {
+        justify-content: space-around;
+
+        .plus-many {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

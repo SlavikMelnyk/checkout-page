@@ -1,0 +1,101 @@
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #30363e;
+  gap: 3px;
+  width: 100px;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+
+  .cheep {
+    position: absolute;
+    top: -10px;
+    padding: 5px 10px;
+    width: 50px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: $text-color;
+    .cheep-title {
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .payment-method-icon {
+    font-size: 2.5rem;
+    display: flex;
+    align-content: start;
+    color: #3498db;
+  }
+
+  .payment-method-details {
+    .payment-method-title {
+      font-size: 12px;
+      color: $text-color;
+      margin: 0;
+    }
+
+    .payment-method-description {
+      font-size: 8px;
+      color: $text-color;
+      opacity: 50%;
+    }
+  }
+}
+
+@media (min-width: 481px) {
+  .payment-method {
+    width: 110px;
+    height: 70px;
+    padding: 15px;
+    gap: 4px;
+
+    .cheep {
+      font-size: 0.8rem;
+      width: auto;
+    }
+
+    .payment-method-icon {
+      font-size: 3rem;
+    }
+
+    .payment-method-details {
+      .payment-method-title {
+        font-size: 13px;
+      }
+
+      .payment-method-description {
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .payment-method {
+    width: 130px;
+    height: 79px;
+    padding: 20px;
+    gap: 5px;
+
+    .payment-method-icon {
+      font-size: 4rem;
+    }
+
+    .payment-method-details {
+      .payment-method-title {
+        font-size: 15px;
+      }
+
+      .payment-method-description {
+        font-size: 10px;
+      }
+    }
+  }
+}

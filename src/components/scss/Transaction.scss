@@ -1,0 +1,201 @@
+.transaction-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 2px;
+  gap: 10px;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+.transaction-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  border-bottom: 1px solid $under-line;
+
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 680px;
+  border-radius: 8px;
+  background-color: $background-color;
+  .transaction-status-info {
+    position: relative;
+    bottom: 70px;
+    right: 350px;
+  }
+}
+
+.transaction-icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+  .icon-background {
+    background-color: $icon-fone;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 280px;
+    height: 30px;
+    border-radius: 15px;
+    .icon {
+      display: flex;
+      justify-content: start;
+      width: 300px;
+    }
+  }
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  gap: 30px;
+
+  .transaction-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100px;
+    color: $text-color;
+  }
+
+  .transaction-description {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: $text-color;
+    opacity: 50%;
+  }
+
+  .transaction-number,
+  .transaction-date,
+  .transaction-amount,
+  .transaction-status {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: $text-color;
+  }
+
+  .transaction-status {
+    &.active {
+      color: $active;
+    }
+
+    &.processing {
+      color: $processing;
+    }
+
+    &.performed {
+      color: $performed;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .transaction-container {
+    padding: 5px;
+  }
+
+  .transaction-card {
+    width: 768px;
+  }
+
+  .transaction-icon {
+    .icon-background {
+      width: 400px;
+      height: 40px;
+    }
+  }
+
+  .transaction-details {
+    .transaction-title {
+      font-size: 1rem;
+      width: 100px;
+    }
+
+    .transaction-description {
+      font-size: 0.9rem;
+    }
+
+    .transaction-number,
+    .transaction-date,
+    .transaction-amount,
+    .transaction-status {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .transaction-container {
+    padding: 10px;
+  }
+
+  .transaction-card {
+    width: 768px;
+    flex-direction: row;
+    .transaction-status-info {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .transaction-icon {
+    .icon-background {
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+    }
+  }
+
+  .transaction-details {
+    .transaction-title {
+      font-size: 1.2rem;
+      width: 120px;
+    }
+
+    .transaction-description {
+      font-size: 1rem;
+    }
+
+    .transaction-number,
+    .transaction-date,
+    .transaction-amount,
+    .transaction-status {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .transaction-card {
+    width: 1024px;
+  }
+  .transaction-title {
+    width: 150px;
+  }
+}
+@media (min-width: 1440px) {
+  .transaction-card {
+    width: 1340px;
+  }
+}

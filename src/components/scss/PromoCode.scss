@@ -1,0 +1,52 @@
+.promo-card {
+  border-radius: 8px;
+
+  max-width: 500px;
+}
+
+.promo-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: $text-color;
+}
+
+.promo-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: $text-color;
+  opacity: 50%;
+}
+
+.promo-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.promo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid $icon-fone;
+  border-radius: 4px;
+  background: $icon-fone;
+  font-size: 1rem;
+  color: $text-color;
+}
+.check-mark {
+  position: absolute;
+
+  display: flex;
+  transform: translatex(1400%) translateY(30%);
+  pointer-events: none;
+}
+
+.promo-button {
+  padding: 10px 40px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: $button-red;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

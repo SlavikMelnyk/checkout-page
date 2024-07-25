@@ -43,7 +43,7 @@ const CheckoutPage = () => {
       },
     },
     {
-      icon: <Skrill width={70} height={24} />,
+      icon: <Skrill width={70} height={40} />,
       title: "Skrill",
       description: "Comission 0%",
     },
@@ -53,17 +53,17 @@ const CheckoutPage = () => {
       description: "Comission 0%",
     },
     {
-      icon: <Piastrix width={93} height={38} />,
+      icon: <Piastrix width={93} height={40} />,
       title: "Piastrix, EUR",
       description: "Comission 0%",
     },
     {
-      icon: <Stic width={105} height={21} />,
+      icon: <Stic width={105} height={40} />,
       title: "SticPay",
       description: "Comission 0%",
     },
     {
-      icon: <Pin width={50} height={21} />,
+      icon: <Pin width={50} height={40} />,
       title: "PIN",
       description: "Comission 1%",
     },
@@ -71,7 +71,7 @@ const CheckoutPage = () => {
 
   const cryptoMethods = [
     {
-      icon: <Bitcoin width={104} height={32} />,
+      icon: <Bitcoin width={104} height={36} />,
       title: "BTC",
       description: "Comission 3%",
     },
@@ -81,7 +81,7 @@ const CheckoutPage = () => {
       description: "Comission 3%",
     },
     {
-      icon: <Tether width={102} height={32} />,
+      icon: <Tether width={102} height={36} />,
       title: "USDT",
       description: "Comission 0%",
     },

@@ -140,17 +140,17 @@ const CheckoutPage = () => {
       <div className="main-wraper">
         <div
           className="main-title"
-          style={{ display: "flex", flexDirection: "column", gap: "40px" }}
+          style={{ display: "flex", margin: "20px 0", flexDirection: "column", gap: "32px" }}
         >
           <p
             className="Make-deposit"
-            style={{ color: "white", fontWeight: "bold", fontSize: "35px" }}
+            style={{ color: "white", fontWeight: "bold", fontSize: "24px" }}
           >
             Make A deposit
           </p>
           <p
             className="choose-payment-method"
-            style={{ color: "white", fontWeight: "", fontSize: "30px" }}
+            style={{ color: "white", fontWeight: "bold", fontSize: "18px" }}
           >
             Choose Payment Method
           </p>

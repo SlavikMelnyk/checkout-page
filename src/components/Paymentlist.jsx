@@ -8,7 +8,7 @@ const PaymentList = ({ title, methods }) => {
   return (
     <div className="list-container">
       <div className="main-title">
-        <h2>{title}</h2>
+        <h2 style={{ fontSize: '16px', fontWeight: 'normal'}}>{title}</h2>
         <div className="payment-list">
           {methods.map((method, index) => (
             <PaymentMethod

@@ -51,6 +51,7 @@
 
         .balance-number {
           padding: 5px;
+          padding-left: 10px;
           border-radius: 5px;
           background-color: $balance-number-color;
           display: flex;
@@ -64,7 +65,7 @@
 
           .procent {
             color: $text-color;
-            font-size: 12px;
+            font-size: 1rem;
             background-color: $balance-color;
             padding: 2px;
             border-radius: 10%;
@@ -195,11 +196,11 @@
         .balance {
           .balance-number {
             .number {
-              font-size: 1.5rem;
+              font-size: 1.2rem;
             }
 
             .procent {
-              font-size: 1rem;
+              font-size: 0.9rem;
             }
           }
         }

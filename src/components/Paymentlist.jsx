@@ -1,5 +1,3 @@
-// src/components/PaymentList.js
-
 import React from "react";
 import PropTypes from "prop-types";
 import PaymentMethod from "./PaymentMethod";
@@ -8,7 +6,7 @@ const PaymentList = ({ title, methods }) => {
   return (
     <div className="list-container">
       <div className="main-title">
-        <h2 style={{ fontSize: '16px', fontWeight: 'normal'}}>{title}</h2>
+        <h2 className="title-list">{title}</h2>
         <div className="payment-list">
           {methods.map((method, index) => (
             <PaymentMethod

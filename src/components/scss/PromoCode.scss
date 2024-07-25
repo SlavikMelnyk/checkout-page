@@ -1,6 +1,5 @@
 .promo-card {
   border-radius: 8px;
-
   max-width: 500px;
 }
 
@@ -43,10 +42,15 @@
 .promo-button {
   padding: 10px 40px;
   font-size: 1rem;
-  color: #fff;
+  color: $text-color;
   background-color: $button-red;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+
+  &:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+  }
 }

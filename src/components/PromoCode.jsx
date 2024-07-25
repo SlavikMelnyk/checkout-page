@@ -28,7 +28,7 @@ export const PromoCodeItem = ({ title, description }) => {
             <CheckMark />
           </div>
         )}
-        <button className="promo-button" onClick={handleApplyClick}>
+        <button className="promo-button" disabled={!promoCode.trim()} onClick={handleApplyClick}>
           Apply
         </button>
       </div>

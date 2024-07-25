@@ -52,7 +52,8 @@
         .balance-number {
           padding: 5px;
           padding-left: 10px;
-          border-radius: 5px;
+          border-top-left-radius:5px ;
+          border-bottom-left-radius:5px ;
           background-color: $balance-number-color;
           display: flex;
           align-items: center;
@@ -95,8 +96,24 @@
   }
 
   .main-wraper {
-    max-width: 1200px;
+    max-width: 300px;
     margin: 0 auto;
+    .main-title{
+      display: flex;
+      margin:  20px 0;
+      flex-direction: column;
+      gap: 32px;
+      .make-deposit{
+        color: $text-color;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .choose-payment-method{
+        color: $text-color;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
   }
   .home-cards {
     display: flex;
@@ -149,6 +166,10 @@
         width: 100%;
       }
     }
+    .main-wraper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: 768px) {
@@ -189,6 +210,7 @@
 
   @media (min-width: 1024px) {
     .home-header {
+     
       .profile-menu {
         .hidden-item {
           display: flex;
@@ -225,11 +247,19 @@
           font-size: 1.2rem;
         }
       }
+      .main-wraper {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
     }
   }
 
   @media (min-width: 1200px) {
     .home-header {
+      .home-wrapper{
+      width: 1200px;
+      margin: 0 auto;
+      }
       h1 {
         font-size: 3.5rem;
       }

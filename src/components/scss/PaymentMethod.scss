@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
   border-radius: 8px;
   background-color: #30363e;
   gap: 3px;
-  width: 100px;
-  height: 60px;
+  width: 130px;
+  height: 80px;
   justify-content: center;
   text-align: center;
   position: relative;
@@ -51,9 +50,8 @@
 
 @media (min-width: 481px) {
   .payment-method {
-    width: 110px;
-    height: 70px;
-    padding: 15px;
+    width: 130px;
+    height: 80px;
     gap: 4px;
 
     .cheep {
@@ -79,9 +77,8 @@
 
 @media (min-width: 769px) {
   .payment-method {
-    width: 130px;
-    height: 79px;
-    padding: 20px;
+    width: 170px;
+    height: 105px;
     gap: 5px;
 
     .payment-method-icon {

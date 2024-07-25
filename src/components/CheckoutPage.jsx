@@ -34,7 +34,7 @@ const CheckoutPage = () => {
       },
     },
     {
-      icon: <Visa width={100} height={40} />,
+      icon: <Visa width={82} height={35} />,
       title: "Visa",
       description: "Comission 3%",
       cheep: {
@@ -43,7 +43,7 @@ const CheckoutPage = () => {
       },
     },
     {
-      icon: <Skrill width={100} height={40} />,
+      icon: <Skrill width={70} height={24} />,
       title: "Skrill",
       description: "Comission 0%",
     },
@@ -53,17 +53,17 @@ const CheckoutPage = () => {
       description: "Comission 0%",
     },
     {
-      icon: <Piastrix width={80} height={40} />,
+      icon: <Piastrix width={93} height={38} />,
       title: "Piastrix, EUR",
       description: "Comission 0%",
     },
     {
-      icon: <Stic width={100} height={40} />,
+      icon: <Stic width={105} height={21} />,
       title: "SticPay",
       description: "Comission 0%",
     },
     {
-      icon: <Pin width={80} height={50} />,
+      icon: <Pin width={50} height={21} />,
       title: "PIN",
       description: "Comission 1%",
     },
@@ -71,17 +71,17 @@ const CheckoutPage = () => {
 
   const cryptoMethods = [
     {
-      icon: <Bitcoin width={100} height={40} />,
+      icon: <Bitcoin width={104} height={32} />,
       title: "BTC",
       description: "Comission 3%",
     },
     {
-      icon: <Ethereum width={100} height={40} />,
+      icon: <Ethereum width={94} height={36} />,
       title: "ETH",
       description: "Comission 3%",
     },
     {
-      icon: <Tether width={100} height={40} />,
+      icon: <Tether width={102} height={32} />,
       title: "USDT",
       description: "Comission 0%",
     },
@@ -139,19 +139,13 @@ const CheckoutPage = () => {
       </NavigateModal>
       <div className="main-wraper">
         <div
-          className="main-title"
-          style={{ display: "flex", margin: "20px 0", flexDirection: "column", gap: "32px" }}
-        >
+          className="main-title" >
           <p
-            className="Make-deposit"
-            style={{ color: "white", fontWeight: "bold", fontSize: "24px" }}
-          >
+            className="make-deposit" >
             Make A deposit
           </p>
           <p
-            className="choose-payment-method"
-            style={{ color: "white", fontWeight: "bold", fontSize: "18px" }}
-          >
+            className="choose-payment-method" >
             Choose Payment Method
           </p>
         </div>

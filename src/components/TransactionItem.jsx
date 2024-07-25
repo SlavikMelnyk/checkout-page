@@ -25,11 +25,11 @@ const Transaction = ({
           <div className="transaction-number"> {transactionNumber}</div>
           <div className="transaction-description">Transaction Number </div>
         </div>
-        <div className="d">
+        <div>
           <div className="transaction-date">{date}</div>
           <div className="transaction-description">Payment Date</div>
         </div>
-        <div className="d">
+        <div>
           <div className="transaction-amount">{amount}</div>
           <div className="transaction-description">Amount Payed</div>
         </div>

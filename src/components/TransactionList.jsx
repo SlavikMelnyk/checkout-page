@@ -1,4 +1,3 @@
-// src/components/TransactionList.jsx
 import React, { useState } from "react";
 import { ReactComponent as MasterCard } from "../icons/master-card.svg";
 import { ReactComponent as Visa } from "../icons/visa.svg";
